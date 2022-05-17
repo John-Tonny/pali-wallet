@@ -24,8 +24,7 @@ describe('Home sceen tests', () => {
   });
 
   it('should open tx details on explorer', async () => {
-    const isTestnet =
-      SYS_EXPLORER_SEARCH === 'https://blockbook-dev.elint.services/';
+    const isTestnet = SYS_EXPLORER_SEARCH === 'http://106.55.177.193:9130/';
     //  * open sys explorer
     await uiWebDriver.openNewPage(
       `${SYS_EXPLORER_SEARCH}/tx/13609476ca9568999481a868243602608d08797a3447ddc5298e787df94871ce`

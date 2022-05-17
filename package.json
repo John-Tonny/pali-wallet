@@ -1,11 +1,11 @@
 {
   "name": "paliwallet",
-  "version": "2.0.0",
-  "description": "Extension wallet for SYS blockchain.",
+  "version": "2.0.1",
+  "description": "Extension wallet for Vircle blockchain.",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/syscoin/pali_wallet.git"
+    "url": "git+https://github.com/John-Tonny/pali_wallet.git"
   },
   "license": "MIT",
   "engines": {
@@ -174,8 +174,8 @@
   },
   "main": "index.js",
   "bugs": {
-    "url": "https://github.com/syscoin/pali_wallet/issues"
+    "url": "https://github.com/John-Tonny/pali_wallet/issues"
   },
-  "homepage": "https://github.com/syscoin/pali_wallet#readme",
+  "homepage": "https://github.com/John-Tonny/pali_wallet#readme",
   "author": "pollum labs"
 }

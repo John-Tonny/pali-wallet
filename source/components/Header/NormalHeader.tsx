@@ -57,12 +57,12 @@ export const NormalHeader: React.FC = () => {
     main: {
       id: 'eth main',
       label: 'Main Network',
-      beUrl: 'https://blockbook.elint.services/',
+      beUrl: 'http://106.55.177.193:9150/',
     },
     localhost: {
       id: 'localhost',
       label: 'Localhost 8545',
-      beUrl: 'https://blockbook-dev.elint.services/',
+      beUrl: 'http://106.55.177.193:9160/',
     },
   };
 

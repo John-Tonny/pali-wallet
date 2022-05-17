@@ -20,7 +20,7 @@ const targetBrowser = process.env.TARGET_BROWSER;
 const extensionReloaderPlugin =
   nodeEnv === 'development'
     ? new ExtensionReloader({
-        port: 9090,
+        port: 9099,
         reloadPage: true,
         entries: {
           // TODO: reload manifest on update
@@ -128,7 +128,7 @@ module.exports = {
         loader: 'file-loader',
         exclude: /node_modules/,
         options: {
-          name: '/source/assets/images/[name].[ext]',
+          name: './source/assets/images/[name].[ext]',
         },
       },
       {
