@@ -3537,10 +3537,18 @@ bip66@^1.1.0, bip66@^1.1.5:
   dependencies:
     safe-buffer "^5.0.1"
 
-bip84@^0.2.7:
+"bip84@https://github.com/John-Tonny/bip84":
   version "0.2.7"
-  resolved "https://registry.yarnpkg.com/bip84/-/bip84-0.2.7.tgz#ed350a2fea02051b3048c411ccc344996d8fda29"
-  integrity sha512-qIBhY2ojC3iATFrpWw8FmNHPFGgjUEkbA4qnchZY6nzv2SAzKy5tmdg9JxVPJlpSfQXYn0hcbzjhEp0+G/Mvqw==
+  resolved "https://github.com/John-Tonny/bip84#259245592e828ae7a88fa3018b7cf59c82299f87"
+  dependencies:
+    bip39 "^3.0.4"
+    bitcoinjs-lib "^5.0.3"
+    bs58check "^2.1.2"
+
+"bip84@https://github.com/John-Tonny/bip84.git":
+  version "0.2.7"
+  uid "259245592e828ae7a88fa3018b7cf59c82299f87"
+  resolved "https://github.com/John-Tonny/bip84.git#259245592e828ae7a88fa3018b7cf59c82299f87"
   dependencies:
     bip39 "^3.0.4"
     bitcoinjs-lib "^5.0.3"
@@ -5827,6 +5835,12 @@ eth-object@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/eth-object/-/eth-object-1.0.3.tgz#5e7a58615793e570c6b1c009eb282876b4d059b6"
   integrity sha512-VOWso/tO0Pz66wNlzUveYN0FgaqHQGVr+n60GL6QWQSUW3kwTyyaMxrHNnaDCeq/61YvMUxygGr9FJsnmWKqEg==
+  dependencies:
+    eth-util-lite "^1.0.1"
+
+"eth-object@https://github.com/syscoin/eth-object.git":
+  version "1.0.3"
+  resolved "https://github.com/syscoin/eth-object.git#b5ff300f57c136138b31d6e570c816a147e0f1c9"
   dependencies:
     eth-util-lite "^1.0.1"
 
@@ -12372,27 +12386,39 @@ sync-exec@~0.6.x:
   resolved "https://registry.yarnpkg.com/sync-exec/-/sync-exec-0.6.2.tgz#717d22cc53f0ce1def5594362f3a89a2ebb91105"
   integrity sha1-cX0izFPwzh3vVZQ2LzqJouu5EQU=
 
-syscoinjs-lib@^1.0.199:
-  version "1.0.200"
-  resolved "https://registry.yarnpkg.com/syscoinjs-lib/-/syscoinjs-lib-1.0.200.tgz#d7f6a10ea34a5612abe09da167fc7d0d38a73ef1"
-  integrity sha512-YQ9HLu/5k1We/sGBbV17JVDk36+JFQqXvyB5UP8xyRu1Yw4ywuLWLo++ho0N56j0bYgsMC5zUafCR5NE5vsMpw==
+"syscoinjs-lib@https://github.com/John-Tonny/syscoinjs-lib":
+  version "1.0.214"
+  resolved "https://github.com/John-Tonny/syscoinjs-lib#1031b1a081c6aee63a87b6c879b20a041314641a"
   dependencies:
     "@trezor/utxo-lib" "^0.1.2"
     axios "^0.21.1"
-    bip84 "^0.2.7"
+    bip84 "https://github.com/John-Tonny/bip84.git"
     bitcoin-ops "^1.4.1"
     bitcoinjs-lib "^5.2.0"
     bn.js "^5.1.3"
     crypto-js "^4.0.0"
-    eth-object "^1.0.3"
+    eth-object "https://github.com/syscoin/eth-object.git"
     eth-proof "^2.1.6"
     node-localstorage "^2.1.6"
-    syscointx-js "^1.0.99"
+    syscointx-js "^1.0.102"
     trezor-connect "^8.1.29"
     varuint-bitcoin "^1.1.2"
     web3 "^1.4.0"
 
-syscointx-js@^1.0.90, syscointx-js@^1.0.99:
+syscointx-js@^1.0.102:
+  version "1.0.102"
+  resolved "https://registry.yarnpkg.com/syscointx-js/-/syscointx-js-1.0.102.tgz#b65dd6b543dde6a40a79c19a41c9974c48993e6f"
+  integrity sha512-pWDvTOekCw1Cw1l0pBC5s3D0RFOSnHwWCFvXF5OMKsmdVHuDy9Jn7Uk5YLf2Kyfpq6BwxFehLC4PH3zS/yDpxg==
+  dependencies:
+    bitcoin-ops "^1.4.1"
+    bitcoinjs-lib "^5.2.0"
+    bn.js "^5.1.3"
+    coinselectsyscoin "^1.0.77"
+    secp256k1 "^3.8.0"
+    typeforce "^1.18.0"
+    varuint-bitcoin "^1.1.2"
+
+syscointx-js@^1.0.90:
   version "1.0.99"
   resolved "https://registry.yarnpkg.com/syscointx-js/-/syscointx-js-1.0.99.tgz#2c1fbdcd972a196b50223a8b689abb82b4ba2c6f"
   integrity sha512-FrT5aKNO7nJQt8PPavmAFwW19J1qXyZQ6brZ5SCPozVOHql7A1G7/z7bBj368NrQhBHaauQ/aqiwQhCzkpPjLA==

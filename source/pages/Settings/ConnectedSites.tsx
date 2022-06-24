@@ -30,7 +30,7 @@ const ConnectedSites = (): any => {
       <p className="m-4 max-w-xs text-white text-xs md:max-w-md">
         {activeAccount?.connectedTo.length
           ? `${activeAccount.label} is connected to:`
-          : `${activeAccount?.label} is not connected to any sites. To connect to a SYS platform site, find the connect button on their site.`}
+          : `${activeAccount?.label} is not connected to any sites. To connect to a Vircle platform site, find the connect button on their site.`}
       </p>
 
       <div className="flex flex-col items-center justify-center w-full">

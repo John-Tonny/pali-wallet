@@ -48,7 +48,8 @@ const getExtensionFileType = (browser) => {
 };
 
 module.exports = {
-  devtool: false, // https://github.com/webpack/webpack/issues/1194#issuecomment-560382342
+  // devtool: false, // https://github.com/webpack/webpack/issues/1194#issuecomment-560382342
+  devtool: 'source-map',
 
   stats: {
     all: false,

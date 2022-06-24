@@ -9,7 +9,7 @@ export const getAssetBalance = (
     return `${value.toFixed(selectedAsset.decimals)} ${selectedAsset.symbol}`;
   }
 
-  return `${activeAccount?.balance.toFixed(8)} SYS`;
+  return `${activeAccount?.balance.toFixed(8)} VCL`;
 };
 
 export const cancelTransaction = (browser: any, tempTx: any) => {

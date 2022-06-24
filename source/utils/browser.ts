@@ -45,7 +45,7 @@ export const createWindow = async ({
   options = {
     url,
     type: 'popup',
-    height: 600,
+    height: 300,
     width: 372,
     left: 900,
     top: 90,

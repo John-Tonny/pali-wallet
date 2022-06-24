@@ -89,7 +89,7 @@ export const TxLayout: FC<ITxLayout> = ({ confirmRoute, txType, title }) => {
               <Tooltip
                 content={`${
                   disabledFee
-                    ? 'Use recommended fee. Disabled for SYS networks because the fee used in transactions is always the recommended for current SYS network conditions.'
+                    ? 'Use recommended fee. Disabled for Vircle networks because the fee used in transactions is always the recommended for current Vircle network conditions.'
                     : 'Click to use the recommended fee'
                 }`}
               >
@@ -134,7 +134,7 @@ export const TxLayout: FC<ITxLayout> = ({ confirmRoute, txType, title }) => {
 
           <p className="mt-4 mx-6 p-4 max-w-xs text-left text-xs bg-transparent border border-dashed border-gray-600 rounded-lg md:max-w-2xl">
             With current network conditions, we recommend a fee of {recommend}{' '}
-            SYS.
+            VCL.
           </p>
 
           <div className="absolute bottom-10 flex gap-3 items-center justify-between w-full max-w-xs md:max-w-2xl">

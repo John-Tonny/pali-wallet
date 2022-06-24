@@ -84,7 +84,7 @@ const CurrencyView = () => {
         show={confirmed}
         onClose={() => navigate('/home')}
         title="Fiat currency set successfully"
-        description={`Now you will see the values in your wallet in SYS and ${
+        description={`Now you will see the values in your wallet in VCL and ${
           selectedCoin.toUpperCase() || 'USD'
         }`}
       />
@@ -148,7 +148,7 @@ const CurrencyView = () => {
                 {formatNumber(Number(activeAccount?.balance) || 0)}{' '}
               </p>
 
-              <p className="font-poppins md:mt-4">TSYS</p>
+              <p className="font-poppins md:mt-4">TVCL</p>
             </div>
           ) : (
             <>
@@ -157,7 +157,7 @@ const CurrencyView = () => {
                   {formatNumber(activeAccount?.balance || 0)}{' '}
                 </p>
 
-                <p className="font-poppins md:mt-4">SYS</p>
+                <p className="font-poppins md:mt-4">VCL</p>
               </div>
 
               <p>
@@ -211,7 +211,7 @@ const CurrencyView = () => {
                 className="text-brand-royalblue"
               />
 
-              <p>SYS</p>
+              <p>VCL</p>
             </div>
           </div>
         </div>

@@ -32,7 +32,7 @@ export const Receive = () => {
   }, [isCopied]);
 
   return (
-    <Layout title="RECEIVE SYS" id="receiveSYS-title">
+    <Layout title="RECEIVE VCL" id="receiveSYS-title">
       {loaded && activeAccount ? (
         <div className="flex flex-col items-center justify-center pt-8 w-full">
           <div id="qr-code">
@@ -52,6 +52,8 @@ export const Receive = () => {
           <p className="mt-4 text-base">
             {ellipsis(activeAccount.address.main, 4, 10)}
           </p>
+
+          <p className="mt-4 text-base">add test my</p>
 
           <div
             className="absolute bottom-12 md:static md:mt-6"

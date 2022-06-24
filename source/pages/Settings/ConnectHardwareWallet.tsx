@@ -84,12 +84,12 @@ const ConnectHardwareWalletView: FC = () => {
                     </span>
 
                     <p className="my-2 text-sm">
-                      2 - Start using SYS powered sites and more
+                      2 - Start using Vircle powered sites and more
                     </p>
 
                     <span className="mb-1 text-xs">
-                      Use your hardware account like you would with any SYS
-                      account. Connect to SYS web3 sites, send SYS, buy and
+                      Use your hardware account like you would with any Vircle
+                      account. Connect to Vircle web3 sites, send VCL, buy and
                       store SPT tokens.
                     </span>
                   </div>
@@ -109,7 +109,7 @@ const ConnectHardwareWalletView: FC = () => {
             <Tooltip
               content={
                 isTestnet &&
-                "Trezor doesn't support SYS testnet. Change your network to be able to connect to trezor."
+                "Trezor doesn't support Vircle testnet. Change your network to be able to connect to trezor."
               }
             >
               <p>Connect</p>

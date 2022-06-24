@@ -121,7 +121,7 @@ export const SendConfirm = () => {
   };
 
   return (
-    <Layout title="SEND SYS">
+    <Layout title="SEND VCL">
       <DefaultModal
         show={confirmed}
         title="Transaction successful"
@@ -136,7 +136,7 @@ export const SendConfirm = () => {
               Send
             </span>
             {tempTx.amount}
-            {tempTx.token ? tempTx.token.symbol : 'SYS'}
+            {tempTx.token ? tempTx.token.symbol : 'VCL'}
           </p>
 
           <div className="flex flex-col gap-3 items-start justify-center mt-4 px-4 py-2 w-full text-left text-sm divide-bkg-3 divide-dashed divide-y">
@@ -163,7 +163,7 @@ export const SendConfirm = () => {
               Max total
               <span className="text-brand-white">
                 {Number(tempTx.fee) + Number(tempTx.amount)}
-                SYS
+                VCL
               </span>
             </p>
           </div>

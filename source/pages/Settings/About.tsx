@@ -57,7 +57,7 @@ const AboutView: FC = () => {
               handleRedirect('https://discord.com/invite/8QKeyurHRd')
             }
           >
-            Click here to be redirected to Syscoin Discord, please contact
+            Click here to be redirected to Vircle Discord, please contact
             support team at #pali_support.
           </p>
           <p className="pt-3 text-brand-white text-xs">

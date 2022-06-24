@@ -69,7 +69,7 @@ export const DetailsView = () => {
           <div className="fixed bottom-0 left-0 right-0 flex gap-x-6 items-center justify-between mx-auto p-4 w-full text-xs bg-bkg-3 md:max-w-2xl">
             <p>
               Would you like to go to view {isAsset ? 'asset' : 'transaction'}{' '}
-              on SYS Block Explorer?
+              on Vircle Block Explorer?
             </p>
 
             <Button

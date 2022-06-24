@@ -200,7 +200,8 @@ const AccountController = (actions: {
       const account = new fromZPub(
         xpub,
         sysjs.Signer.Signer.pubtypes,
-        sysjs.Signer.Signer.networks
+        sysjs.Signer.Signer.networks,
+        sysjs.Signer.Signer.segwit // john 20220620
       );
       let receivingIndex = -1;
 
@@ -397,7 +398,8 @@ const AccountController = (actions: {
       const trezorAccount = new fromZPub(
         account.xpub,
         sysjs.Signer.Signer.pubtypes,
-        sysjs.Signer.Signer.networks
+        sysjs.Signer.Signer.networks,
+        sysjs.Signer.Signer.segwit
       );
       let receivingIndex = -1;
       let changeIndex = -1;

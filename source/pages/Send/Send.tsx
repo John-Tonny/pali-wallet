@@ -179,7 +179,7 @@ export const Send: FC<ISend> = () => {
                 >
                   {selectedAsset?.symbol
                     ? formatUrl(String(selectedAsset?.symbol), 2)
-                    : 'SYS'}
+                    : 'VCL'}
                   <ChevronDoubleDownIcon
                     className="text-violet-200 hover:text-violet-100 -mr-1 ml-2 w-5 h-5"
                     aria-hidden="true"
@@ -238,7 +238,7 @@ export const Send: FC<ISend> = () => {
             >
               <Tooltip
                 childrenClassName="text-brand-white h-4"
-                content="Pali verifies your address to check if it is a valid SYS address. It's useful disable this verification if you want to send to specific type of addresses, like legacy. Only disable this verification if you are fully aware of what you are doing."
+                content="Pali verifies your address to check if it is a valid VCL address. It's useful disable this verification if you want to send to specific type of addresses, like legacy. Only disable this verification if you are fully aware of what you are doing."
               >
                 <p
                   className={`${
@@ -277,7 +277,7 @@ export const Send: FC<ISend> = () => {
             >
               <Tooltip
                 childrenClassName="text-brand-white h-4"
-                content="Disable this option for Replace-by-fee (RBF) and enable for Z-DAG, a exclusive Syscoin feature. Z-DAG enables faster transactions but should not be used for high amounts."
+                content="Disable this option for Replace-by-fee (RBF) and enable for Z-DAG, a exclusive Vircle feature. Z-DAG enables faster transactions but should not be used for high amounts."
               >
                 <p
                   className={`${
@@ -353,7 +353,7 @@ export const Send: FC<ISend> = () => {
             <Tooltip
               content={`${
                 disabledFee
-                  ? 'Use recommended fee. Disabled for SYS networks because the fee used in transactions is always the recommended for current SYS network conditions.'
+                  ? 'Use recommended fee. Disabled for Vircle networks because the fee used in transactions is always the recommended for current Vircle network conditions.'
                   : 'Click to use the recommended fee'
               }`}
             >
@@ -400,7 +400,7 @@ export const Send: FC<ISend> = () => {
 
         <p className="flex flex-col items-center justify-center p-0 max-w-xs text-center text-brand-royalblue sm:w-full md:my-4">
           <span className="text-xs">
-            {`With current network conditions we recommend a fee of ${recommend} SYS`}
+            {`With current network conditions we recommend a fee of ${recommend} VCL`}
           </span>
 
           <span className="mt-0.5 text-brand-white font-rubik text-xs">
@@ -422,7 +422,7 @@ export const Send: FC<ISend> = () => {
     </div>
   );
   return (
-    <Layout title="SEND SYS" id="sendSYS-title">
+    <Layout title="SEND VCL" id="sendSYS-title">
       <SendForm />
     </Layout>
   );

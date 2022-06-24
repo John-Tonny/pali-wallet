@@ -23,6 +23,10 @@ import TrezorController from './TrezorController';
 
 const sys = require('syscoinjs-lib');
 
+// john 20220620
+// const PubTypes = sys.utils.syscoinXPubTypes;
+const PubTypes = sys.utils.syscoinZPubTypes;
+
 const WalletController = (): IWalletController => {
   let password: any = '';
   let encryptedPassword: any = '';
@@ -98,6 +102,7 @@ const WalletController = (): IWalletController => {
       walletMnemonic: mnemonic,
       walletPassword: null,
       isTestnet: false,
+      pubTypes: PubTypes, // john 20220620
     });
     setSjs({ SignerIn: HDsigner, blockbookURL: networks.main.beUrl });
 
@@ -169,7 +174,7 @@ const WalletController = (): IWalletController => {
               isTestnet,
               networks: sys.utils.syscoinNetworks,
               SLIP44: 57,
-              pubTypes: sys.utils.syscoinZPubTypes,
+              pubTypes: PubTypes, // john 20220620
             });
             setSjs({
               SignerIn: HDsigner,
@@ -193,7 +198,8 @@ const WalletController = (): IWalletController => {
               new fromZPrv(
                 child,
                 sjs.Signer.Signer.pubTypes,
-                sjs.Signer.Signer.networks
+                sjs.Signer.Signer.networks,
+                sjs.Signer.Signer.segwit
               )
             );
             sjs.Signer.setAccountIndex(activeAccountId);
@@ -264,7 +270,8 @@ const WalletController = (): IWalletController => {
     const derived = new fromZPrv(
       child,
       sjs.Signer.Signer.pubTypes,
-      sjs.Signer.Signer.networks
+      sjs.Signer.Signer.networks,
+      sjs.Signer.Signer.segwit
     );
 
     sjs.Signer.Signer.accounts.push(derived);
@@ -369,6 +376,7 @@ const WalletController = (): IWalletController => {
           walletMnemonic: HDsigner.mnemonic,
           walletPassword: null,
           isTestnet,
+          pubTypes: PubTypes, // john 20220620
         });
         setSjs({
           SignerIn: HDsigner,
@@ -405,7 +413,8 @@ const WalletController = (): IWalletController => {
       const account0 = new fromZPub(
         userAccount.xpub,
         sjs.Signer.Signer.pubTypes,
-        sjs.Signer.Signer.networks
+        sjs.Signer.Signer.networks,
+        sjs.Signer.Singer.segwit
       );
 
       let receivingIndex = -1;

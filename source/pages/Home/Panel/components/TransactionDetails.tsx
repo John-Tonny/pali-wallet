@@ -91,7 +91,7 @@ export const TransactionDetails = ({ transactionType, transactionDetails }) => {
             {formatUrl(String(Number(addressValue) / 10 ** 8), 18)
               ? formatUrl(String(Number(addressValue) / 10 ** 8), 18)
               : 0}{' '}
-            {activeNetwork === 'main' ? 'SYS' : 'tSYS'}
+            {activeNetwork === 'main' ? 'VCL' : 'tVCL'}
           </small>
 
           <IconButton onClick={() => copyText(address)}>
@@ -109,8 +109,8 @@ export const TransactionDetails = ({ transactionType, transactionDetails }) => {
 
   const checkNetwork = (checkValue: any) =>
     activeNetwork === 'main'
-      ? `${checkValue / 10 ** 8} SYS`
-      : `${checkValue / 10 ** 8} tSYS`;
+      ? `${checkValue / 10 ** 8} VCL`
+      : `${checkValue / 10 ** 8} tVCL`;
 
   const txData = [
     {

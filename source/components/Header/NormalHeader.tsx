@@ -147,7 +147,7 @@ export const NormalHeader: React.FC = () => {
                           />
 
                           <span className="px-3 text-base">
-                            Syscoin networks
+                            Vircle networks
                           </span>
 
                           <Icon

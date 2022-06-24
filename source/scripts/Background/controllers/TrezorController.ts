@@ -9,7 +9,7 @@ const TrezorController = ({ account }) => {
     if (isTestnet) {
       return openNotificationsPopup(
         "Can't create hardware wallet on testnet",
-        "Trezor doesn't support SYS testnet"
+        "Trezor doesn't support Vircle testnet"
       );
     }
 

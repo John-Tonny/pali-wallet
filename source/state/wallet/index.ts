@@ -56,7 +56,7 @@ export const initialState: IWalletState = {
     'twitter.com': 'https://twitter1.com/home',
     'maps.google.com': 'https://maps1.google.com/',
     'facebook.com': 'https://accounts1.google.com/b/0/AddMailService',
-    'sysmint.paliwallet.com': 'sysmint1.paliwallet.com',
+    'sysmint.paliwallet.com': 'locahost:5000',
   },
   temporaryTransactionState: {
     executing: false,

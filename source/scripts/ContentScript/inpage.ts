@@ -13,7 +13,7 @@ if (!window.ConnectionsController) {
 }
 
 window.dispatchEvent(
-  new CustomEvent('SyscoinStatus', {
+  new CustomEvent('VircleStatus', {
     detail: {
       SyscoinInstalled: true,
       ConnectionsController: true,

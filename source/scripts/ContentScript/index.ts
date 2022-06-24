@@ -1,6 +1,10 @@
 import { logError } from 'utils/index';
 import { browser } from 'webextension-polyfill-ts';
 
+//import { IConnectionsController } from 'types/controllers';
+
+//import MasterController from '../Background/controllers/index';
+
 import {
   getMessagesToListenTo,
   listenAndSendMessageFromPageToBackground,
@@ -10,6 +14,7 @@ declare global {
   interface Window {
     SyscoinWallet: any;
     connectionConfirmed: boolean;
+    // ConnectionsController: Readonly<IConnectionsController>;
   }
 }
 
@@ -101,8 +106,16 @@ const injectScriptFile = (file: string) => {
 if (shouldInjectProvider()) {
   injectScript("window.SyscoinWallet = 'Pali Wallet is installed! :)'");
 
+  /*
+  if (!window.ConnectionsController) {
+    window.ConnectionsController = MasterController().connections;
+  }
+
+  window.connectionConfirmed = true;
+  */
+
   window.dispatchEvent(
-    new CustomEvent('SyscoinStatus', {
+    new CustomEvent('VircleStatus', {
       detail: {
         SyscoinInstalled: true,
         ConnectionsController: false,

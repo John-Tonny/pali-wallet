@@ -29,7 +29,7 @@ export const Home = () => {
   }, [!controller.wallet.isLocked(), accounts.length > 0]);
 
   const isTestnet = activeNetwork === 'testnet';
-  const isNotTestnet = activeNetwork === 'main' ? 'SYS' : symbol;
+  const isNotTestnet = activeNetwork === 'main' ? 'VCL' : symbol;
 
   return (
     <div className="scrollbar-styled h-full bg-bkg-3 overflow-auto">
@@ -50,7 +50,7 @@ export const Home = () => {
                     </p>
 
                     <p className="mt-4 font-poppins">
-                      {isTestnet ? 'TSYS' : isNotTestnet}
+                      {isTestnet ? 'TVCL' : isNotTestnet}
                     </p>
                   </div>
 
