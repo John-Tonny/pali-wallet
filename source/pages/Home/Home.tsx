@@ -14,7 +14,8 @@ export const Home = () => {
   const { navigate, handleRefresh } = useUtils();
   const activeAccount = controller.wallet.account.getActiveAccount();
 
-  const { accounts, activeNetwork /*, fiat*/ } = useStore();
+  const { accounts, activeNetwork } = useStore();
+  // const { accounts, activeNetwork, fiat } = useStore();
 
   const setChainSymbol = async () => {
     const sb = await getSymbolByChain(activeNetwork);
@@ -60,7 +61,7 @@ export const Home = () => {
                         activeAccount.balance || 0,
                         4,
                         'cny'
-                        /*String(fiat.current)*/
+                        /* String(fiat.current) */
                       )}
                     </p>
                   )}

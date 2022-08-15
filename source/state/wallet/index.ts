@@ -43,12 +43,14 @@ export const initialState: IWalletState = {
       id: 'main',
       label: 'Main Network',
       beUrl: 'http://106.55.177.193:9130/',
-    } /*
+    },
+    /*
     testnet: {
       id: 'testnet',
       label: 'Test Network',
       beUrl: 'http://106.55.177.193:9140/',
-    },*/,
+    },
+   */
   },
   trustedApps: {
     'app.uniswap.org': 'app.uniswap.org',
