@@ -8,6 +8,9 @@ const CoinGecko = require('coingecko-api');
 
 export const CoinGeckoClient = new CoinGecko();
 
+const VircleApi = require('vircle-api');
+const vircleApi = new VircleApi();
+
 export interface IControllerUtils {
   appRoute: (newRoute?: string) => string;
   coinsAll: () => any;
@@ -97,17 +100,23 @@ const ControllerUtils = (): IControllerUtils => {
         await fetch(`${ASSET_PRICE_API}?currency=${currency || 'usd'}`)
       ).json();
 
-      if (data) {
-        store.dispatch(
-          updateFiatPrice({
-            assetId,
-            price: data.rates[currency],
-            availableCoins: availableCoins.rates || {
-              currency: data.rates[currency],
-            },
-            current: currency,
-          })
-        );
+      const mydata = await vircleApi.get('fundValue/latest');
+      if (mydata) {
+        if (data) {
+          // john
+          currency = 'cny';
+          data.rates[currency] = mydata.data.fundValue;
+          store.dispatch(
+            updateFiatPrice({
+              assetId,
+              price: data.rates[currency],
+              availableCoins: availableCoins.rates || {
+                currency: data.rates[currency],
+              },
+              current: currency,
+            })
+          );
+        }
       }
     } catch (error) {
       logError('Failed to retrieve asset price', '', error);

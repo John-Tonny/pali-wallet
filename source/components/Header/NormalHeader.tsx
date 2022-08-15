@@ -53,6 +53,7 @@ export const NormalHeader: React.FC = () => {
     }
   }, [activeAccount, currentTabURL]);
 
+  /*
   const ethNetworks = {
     main: {
       id: 'eth main',
@@ -65,6 +66,7 @@ export const NormalHeader: React.FC = () => {
       beUrl: 'http://106.55.177.193:9160/',
     },
   };
+  */
 
   // TODO: breakdown NetworkMenu
   const NetworkMenu = () => (
@@ -190,7 +192,7 @@ export const NormalHeader: React.FC = () => {
                     )}
                   </Disclosure>
                 </Menu.Item>
-
+                {/*
                 <Menu.Item>
                   <Disclosure>
                     {({ open }) => (
@@ -245,7 +247,8 @@ export const NormalHeader: React.FC = () => {
                     )}
                   </Disclosure>
                 </Menu.Item>
-
+		*/}
+                {/*
                 <Menu.Item>
                   <li
                     onClick={() => navigate('/settings/networks/custom-rpc')}
@@ -259,7 +262,7 @@ export const NormalHeader: React.FC = () => {
                     <span className="px-3">Custom RPC</span>
                   </li>
                 </Menu.Item>
-
+		*/}
                 <Menu.Item>
                   <li
                     onClick={() => navigate('/settings/networks/edit')}
@@ -359,7 +362,7 @@ export const NormalHeader: React.FC = () => {
                   <span className="px-3">Auto lock timer</span>
                 </li>
               </Menu.Item>
-
+              {/*
               <Menu.Item>
                 <li
                   onClick={() => navigate('/settings/currency')}
@@ -370,7 +373,7 @@ export const NormalHeader: React.FC = () => {
                   <span className="px-3">Currency</span>
                 </li>
               </Menu.Item>
-
+	      */}
               <Menu.Item>
                 <li
                   onClick={() => navigate('/settings/phrase')}

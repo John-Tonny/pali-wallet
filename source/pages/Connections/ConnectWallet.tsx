@@ -81,7 +81,7 @@ export const ConnectWallet = () => {
 
         <small className="mb-8 text-center text-brand-royalblue text-sm">
           Only connect with sites you trust.{' '}
-          <a href="https://docs.syscoin.org/">Learn more.</a>
+          <a href="https://www.vpubchain.info/">Learn more.</a>
         </small>
 
         <div className="absolute bottom-10 flex gap-3 items-center justify-between w-full max-w-xs md:max-w-2xl">

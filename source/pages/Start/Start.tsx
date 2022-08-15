@@ -88,7 +88,7 @@ export const Start = () => {
         Pali Wallet
       </h1>
 
-      <img src={LogoImage} className="my-8 w-52" alt="syscoin" />
+      <img src={LogoImage} className="my-8 w-52" alt="vircle" />
 
       {encriptedMnemonic ? unlock : getStarted}
     </div>

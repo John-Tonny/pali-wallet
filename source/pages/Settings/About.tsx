@@ -26,7 +26,7 @@ const AboutView: FC = () => {
     <Layout title="INFO & HELP" id="info-help-title">
       <div className="flex flex-col gap-y-4 mt-4 pl-8 w-full text-brand-white text-sm md:pl-20">
         <p>Pali Wallet Browser Extension v2.0</p>
-        <p>Version: 1.0.23</p>
+        <p>Version: 2.0.8</p>
 
         <p
           className="hover:text-brand-royalblue transition-all duration-200"

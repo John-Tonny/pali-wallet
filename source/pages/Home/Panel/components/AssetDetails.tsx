@@ -79,7 +79,7 @@ export const AssetDetails = ({ assetType, assetData }) => {
         <Tooltip content="Click to open on IPFS">
           <img
             src={`${imageLink}`}
-            alt="syscoin"
+            alt="vircle"
             className="mb-8 mt-4 mx-auto w-40 h-40 rounded-md cursor-pointer transition-all duration-200"
             onClick={() => imageLink && window.open(imageLink)}
           />
@@ -93,7 +93,7 @@ export const AssetDetails = ({ assetType, assetData }) => {
           ) : (
             <img
               src={`${placeholder}`}
-              alt="syscoin"
+              alt="vircle"
               className="mb-8 mt-4 mx-auto w-40 h-40 rounded-md cursor-not-allowed transition-all duration-200"
             />
           )}

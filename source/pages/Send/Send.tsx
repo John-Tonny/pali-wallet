@@ -18,7 +18,7 @@ export const Send: FC<ISend> = () => {
   const activeAccount = controller.wallet.account.getActiveAccount();
 
   const { alert, navigate } = useUtils();
-  const { activeNetwork, fiat } = useStore();
+  const { activeNetwork /*, fiat*/ } = useStore();
   const [verifyAddress, setVerifyAddress] = useState<boolean>(true);
   const [ZDAG, setZDAG] = useState<boolean>(false);
   const [selectedAsset, setSelectedAsset] = useState<Assets | null>(null);
@@ -409,9 +409,14 @@ export const Send: FC<ISend> = () => {
               ? getFiatAmount(
                   Number(recommend) + Number(recommend),
                   6,
-                  String(fiat.current)
+                  /*String(fiat.current)*/
+                  'cny'
                 )
-              : getFiatAmount(Number(recommend), 6, String(fiat.current))}
+              : getFiatAmount(
+                  Number(recommend),
+                  6,
+                  /*String(fiat.current)*/ 'cny'
+                )}
           </span>
         </p>
 

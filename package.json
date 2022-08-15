@@ -110,6 +110,7 @@
     "redux-watch": "^1.2.0",
     "sass": "^1.32.12",
     "selenium-webdriver": "^4.1.1",
+    "vircle-api": "https://github.com/John-Tonny/vircle-api",
     "syscoinjs-lib": "https://github.com/John-Tonny/syscoinjs-lib",
     "syscointx-js": "^1.0.90",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",

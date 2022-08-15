@@ -43,19 +43,19 @@ export const initialState: IWalletState = {
       id: 'main',
       label: 'Main Network',
       beUrl: 'http://106.55.177.193:9130/',
-    },
+    } /*
     testnet: {
       id: 'testnet',
       label: 'Test Network',
       beUrl: 'http://106.55.177.193:9140/',
-    },
+    },*/,
   },
   trustedApps: {
-    'app.uniswap.org': 'app1.uniswap.org',
-    'trello.com': 'https://trello1.com/b/0grd7QPC/dev',
-    'twitter.com': 'https://twitter1.com/home',
-    'maps.google.com': 'https://maps1.google.com/',
-    'facebook.com': 'https://accounts1.google.com/b/0/AddMailService',
+    'app.uniswap.org': 'app.uniswap.org',
+    'trello.com': 'https://trello.com/b/0grd7QPC/dev',
+    'twitter.com': 'https://twitter.com/home',
+    'maps.google.com': 'https://maps.google.com/',
+    'facebook.com': 'https://accounts.google.com/b/0/AddMailService',
     'sysmint.paliwallet.com': 'locahost:5000',
   },
   temporaryTransactionState: {
