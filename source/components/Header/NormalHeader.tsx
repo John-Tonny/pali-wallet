@@ -247,7 +247,7 @@ export const NormalHeader: React.FC = () => {
                     )}
                   </Disclosure>
                 </Menu.Item>
-		*/}
+                */}
                 {/*
                 <Menu.Item>
                   <li
@@ -262,7 +262,7 @@ export const NormalHeader: React.FC = () => {
                     <span className="px-3">Custom RPC</span>
                   </li>
                 </Menu.Item>
-		*/}
+                */}
                 <Menu.Item>
                   <li
                     onClick={() => navigate('/settings/networks/edit')}
@@ -373,7 +373,7 @@ export const NormalHeader: React.FC = () => {
                   <span className="px-3">Currency</span>
                 </li>
               </Menu.Item>
-	      */}
+              */}
               <Menu.Item>
                 <li
                   onClick={() => navigate('/settings/phrase')}

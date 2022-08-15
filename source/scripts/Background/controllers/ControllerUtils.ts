@@ -2,8 +2,11 @@ import { ASSET_PRICE_API, PRICE_SYS_ID } from 'constants/index';
 import store from 'state/store';
 import { updateFiatPrice } from 'state/price';
 import { logError } from 'utils/index';
+
 const CoinGecko = require('coingecko-api');
+
 export const CoinGeckoClient = new CoinGecko();
+
 const VircleApi = require('vircle-api');
 const vircleApi = new VircleApi();
 
