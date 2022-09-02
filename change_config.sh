@@ -5,6 +5,9 @@ file2=./source/state/wallet/index.ts
 file3=./source/components/Header/NormalHeader.tsx
 
 SYS_MAINNET_BLOCKBOOK='69.234.192.199:9130'
+SYS_TESTNET_BLOCKBOOK='69.234.192.198:9140'
+ETH_MAINNET_BLOCKBOOK='69.234.192.197:9150'
+ETH_TESTNET_BLOCKBOOK='69.234.192.196:9160'
 
 VAR1=sys-mainnet-blockbook
 VAR2=sys-testnet-blockbook
@@ -27,7 +30,7 @@ fi
 if [ "x${ETH_MAINNET_BLOCKBOOK}" != "x" ]; then
   sed -i "s/$VAR3/$ETH_MAINNET_BLOCKBOOK/g" $file1
   sed -i "s/$VAR3/$ETH_MAINNET_BLOCKBOOK/g" $file2
-  sed -i "s/$VAR4/$ETH_MAINNET_BLOCKBOOK/g" $file3
+  sed -i "s/$VAR3/$ETH_MAINNET_BLOCKBOOK/g" $file3
 fi
 
 if [ "x${ETH_TESTNET_BLOCKBOOK}" != "x" ]; then

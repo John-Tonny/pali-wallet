@@ -10,7 +10,7 @@ export const SYS_NETWORK: {
   main: {
     id: 'main',
     label: 'Mainnet',
-    beUrl: 'http://69.234.192.199:9130/',
+    beUrl: 'http://sys-mainnet-blockbook/',
   },
   testnet: {
     id: 'testnet',
@@ -40,7 +40,7 @@ export const ETH_NETWORK: {
 
 export const ASSET_PRICE_API =
   'https://blockbook.elint.services/api/v2/tickers/';
-export const SYS_EXPLORER_SEARCH = 'http://69.234.192.199:9130/';
+export const SYS_EXPLORER_SEARCH = 'http://sys-mainnet-blockbook/';
 
 export const PRICE_SYS_ID = 'syscoin';
 export const PRICE_BTC_ID = 'bitcoin';
