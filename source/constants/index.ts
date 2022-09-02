@@ -10,12 +10,12 @@ export const SYS_NETWORK: {
   main: {
     id: 'main',
     label: 'Mainnet',
-    beUrl: 'http://106.55.177.193:9130/',
+    beUrl: 'http://sys-mainnet-blockbook/',
   },
   testnet: {
     id: 'testnet',
     label: 'Testnet',
-    beUrl: 'http://106.55.177.193:9140/',
+    beUrl: 'http://sys-testnet-blockbook/',
   },
 };
 
@@ -29,18 +29,18 @@ export const ETH_NETWORK: {
   main: {
     id: 'main',
     label: 'Mainnet',
-    beUrl: 'http://106.55.177.193:9150/',
+    beUrl: 'http://eth-mainnet-blockbook/',
   },
   testnet: {
     id: 'testnet',
     label: 'Testnet',
-    beUrl: 'http://106.55.177.193:9160/',
+    beUrl: 'http://eth-testnet-blockbook/',
   },
 };
 
 export const ASSET_PRICE_API =
   'https://blockbook.elint.services/api/v2/tickers/';
-export const SYS_EXPLORER_SEARCH = 'http://106.55.177.193:9130/';
+export const SYS_EXPLORER_SEARCH = 'http://sys-mainnet-blockbook/';
 
 export const PRICE_SYS_ID = 'syscoin';
 export const PRICE_BTC_ID = 'bitcoin';
