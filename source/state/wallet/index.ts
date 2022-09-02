@@ -37,12 +37,12 @@ export const initialState: IWalletState = {
     connections: [],
   },
   timer: 5,
-  currentBlockbookURL: 'http://69.234.192.199:9130/',
+  currentBlockbookURL: 'http://sys-mainnet-blockbook/',
   networks: {
     main: {
       id: 'main',
       label: 'Main Network',
-      beUrl: 'http://69.234.192.199:9130/',
+      beUrl: 'http://sys-mainnet-blockbook/',
     },
     /*
     testnet: {
